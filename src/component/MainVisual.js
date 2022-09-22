@@ -22,6 +22,7 @@ const MainVisual = () => {
                     arrows={false}
                     ref={SLIDE}
                     className={'mainvisual_slide'}
+                    autoplay={true}
                 >
                     {
                         SOLUTION.map((img, idx) => {

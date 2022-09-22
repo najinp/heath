@@ -3,8 +3,10 @@ import Header from './component/Header';
 import Wrapper from './component/Wrapper';
 import MainVisual from './component/MainVisual';
 import Footer from './component/Footer';
-import Tabs from './component/Tabs';
-import Tabb from './component/Tabb';
+import Tab from './component/Tab';
+import Category from './component/Category';
+import Subscribe from './component/Subscribe';
+import Tabs from './component/Faketap';
 
 const App = () => {
   return (
@@ -12,10 +14,12 @@ const App = () => {
       <Header />
       <main>
         <MainVisual />
-        <Tabs />
-        <Tabb />
+        <Category />
+        <Tab />
+        <Subscribe />
       </main>
       <Footer />
+      <Tabs />
     </Wrapper >
   );
 }
