@@ -11,7 +11,6 @@
 
 
 
-
 .inner {
   position: relative;
   width: 1700px;
@@ -152,12 +151,13 @@
   display: none;
   position: absolute;
   top: 80px;
-  right: -65px;
+  right: 0px;
+  left: 0px;
   line-height: 1;
   border: 1px solid var(--gc);
   background: var(--lc);
   padding: 30px 50px;
-  width: 100vw;
+  width: 100%;
   background: #444;
   text-align: center;
 }
@@ -223,8 +223,8 @@
   position: absolute;
   top: 100px;
   right: 0;
-  width: 550px;
-  height: 550px;
+  width: 530px;
+  height: 530px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   background: #fff;
   padding: 100px 80px;
@@ -242,19 +242,47 @@
   text-align: left;
   line-height: 1.45;
   word-break: keep-all;
-  margin: 0 0 70px 0;
+  margin: 0 0 80px 0;
 }
 
 .mainvisual .box a {
   font-size: 16px;
-  padding: 15px 40px;
+  padding: 15px 20px;
   border: 2px solid #9a8d81;
 }
+
+.mainvisual #icon-arrow {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  fill: #444;
+  vertical-align: middle;
+  margin: 0 0 0 30px;
+}
+
+
 
 .mainvisual .box a:hover {
   background: #9a8d81;
   color: #fff;
 }
+
+.mainvisual a:hover #icon-arrow {
+  fill: #fff;
+}
+
+.mainvisual #icon-arrow:hover .arrow-stem {
+  stroke-width: 30px;
+}
+
+/* .mainvisual .box a:hover .arrow-head,
+.mainvisual .box a:hover .arrow-stem {
+  fill: #fff;
+} */
+
+
+
 
 .mainvisual .num {
   font-size: 40px;
@@ -431,7 +459,6 @@
 
 
 
-
 /* .......................tab */
 
 .Tab {
@@ -490,6 +517,7 @@
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+
 }
 
 .Tab .mark_point li::after {
@@ -503,6 +531,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
   animation: pulse 2s infinite 0.5s;
 }
 
@@ -572,10 +601,18 @@
 .card_right .cal {
   display: block;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 4px;
   margin: 0 0 30px 0;
 }
+
+.card_right h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.card_right .price {}
 
 .Tab .inner {
   position: relative;
@@ -587,24 +624,60 @@
   left: 0;
 }
 
-.tab_card .card01 {
-  position: absolute;
-  top: 430px;
-  left: 350px;
+.tab_card li {
   opacity: 0;
 }
 
 
-.tab_card .card01 {
+.tab_card .active-content01 {
   position: absolute;
   top: 430px;
   left: 350px;
-  opacity: 0;
-}
-
-.Tab .img01_point:hover~.tab_card .card01 {
   opacity: 1;
 }
+
+.tab_card .active-content02 {
+  position: absolute;
+  top: 450px;
+  left: 510px;
+  opacity: 1;
+}
+
+.tab_card .active-content03 {
+  position: absolute;
+  top: 540px;
+  left: 670px;
+  opacity: 1;
+}
+
+.tab_card .active-content04 {
+  position: absolute;
+  top: 340px;
+  left: 730px;
+  opacity: 1;
+}
+
+.tab_card .active-content05 {
+  position: absolute;
+  top: 470px;
+  left: 890px;
+  opacity: 1;
+}
+
+.tab_card .active-content06 {
+  position: absolute;
+  top: 640px;
+  left: 1090px;
+  opacity: 1;
+}
+
+.tab_card .none {
+  opacity: 0;
+  top: 430px;
+  left: 350px;
+}
+
+
 
 
 
@@ -761,7 +834,7 @@
   position: relative;
   height: 650px;
   display: block;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -771,20 +844,45 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: #f5f4ee;
-  ;
   z-index: 999;
   padding: 50px;
   height: 300px;
   width: 900px;
 }
 
+.Subscribe input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #706356;
+  width: 680px;
+  font-size: 27px;
+  margin: 0 0 50px 0;
+}
+
+.Subscribe #icon-arrow {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  fill: #444;
+  vertical-align: top;
+  margin: 0 0 0 30px;
+}
+
+
 .Subscribe .cali {
   display: block;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 4px;
-  margin: 0 0 30px 0;
+  margin: 0 0 70px 0;
 }
+
+.Subscribe .account {
+  display: block;
+  font-size: 15px;
+}
+
 
 
 
@@ -815,7 +913,6 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 4px;
-  margin: 0 0 30px 0;
   line-height: 1.4;
   color: #f5f4ee;
 }
@@ -836,97 +933,4 @@
   margin: 0 0 0 15px;
   line-height: 40px;
   vertical-align: middle;
-}
-
-
-
-
-
-
-/* ....잠주 */
-.fakeTabs .container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 1700px;
-  height: 300px;
-  background: #f1f1f1;
-  margin: 100px auto 0;
-  word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
-}
-
-.fakeTabs .bloc-tabs {
-  display: flex;
-}
-
-.fakeTabs .tabs {
-  padding: 15px;
-  text-align: center;
-  width: 50%;
-  background: rgba(128, 128, 128, 0.075);
-  cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  box-sizing: content-box;
-  position: relative;
-  outline: none;
-}
-
-.fakeTabs .tabs:not(:last-child) {
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
-}
-
-.fakeTabs .active-tabs {
-  background: white;
-  border-bottom: 1px solid transparent;
-}
-
-.fakeTabs .active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
-  background: rgb(88, 147, 241);
-}
-
-
-.fakeTabs button {
-  border: none;
-
-}
-
-.fakeTabs .content-tabs {
-  flex-grow: 1;
-}
-
-.fakeTabs .content {
-  background: white;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.fakeTabs .content h2 {
-  padding: 0px 0 5px 0px;
-}
-
-.fakeTabs .content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-}
-
-.fakeTabs .content p {
-  width: 100%;
-  height: 100%;
-}
-
-.fakeTabs .active-content {
-  display: block;
 }

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import Logo from './svg/Logo';
+import IconA from './svg/IconA';
 
 const SOLUTION = [
     { id: 1, content: "꽃병들", description: "이미 존재하는 아름다움을 디자인하다.", btn: "꽃병 쇼핑하기", link: "/" },
@@ -38,11 +39,12 @@ const MainVisual = () => {
                     <div className="content">
                         <div className='tit'>{SOLUTION[slideNum].content}</div>
                         <p>{SOLUTION[slideNum].description}</p>
-                        <a href={SOLUTION[slideNum].link} className='cbtn'>{SOLUTION[slideNum].btn}</a>
+                        <a href={SOLUTION[slideNum].link} className='cbtn'>{SOLUTION[slideNum].btn}    <IconA /> </a>
+
                     </div>
-                    <div className="num">
+                    {/* <div className="num">
                         0{slideNum + 1} <span>/ 0{SOLUTION.length}</span>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="arrows">
                     <i className='xi-arrow-left' onClick={() => SLIDE.current.slickPrev()}></i>

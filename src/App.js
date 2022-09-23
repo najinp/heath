@@ -6,7 +6,7 @@ import Footer from './component/Footer';
 import Tab from './component/Tab';
 import Category from './component/Category';
 import Subscribe from './component/Subscribe';
-import Tabs from './component/Faketap';
+
 
 const App = () => {
   return (
@@ -19,7 +19,6 @@ const App = () => {
         <Subscribe />
       </main>
       <Footer />
-      <Tabs />
     </Wrapper >
   );
 }

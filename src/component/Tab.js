@@ -1,7 +1,11 @@
 import { useState } from "react";
 
 function Tab() {
+    const [toggle, setToggle] = useState(1);
 
+    const toggleTabs = (index) => {
+        setToggle(index);
+    };
 
     return (
         <section class="Tab">
@@ -13,12 +17,12 @@ function Tab() {
 
                 <div className="baseroom">
                     <ul class="mark_point">
-                        <li class="img01_point"></li>
-                        <li class="img02_point"></li>
-                        <li class="img03_point"></li>
-                        <li class="img04_point"></li>
-                        <li class="img05_point"></li>
-                        <li class="img06_point"></li>
+                        <li class="img01_point" onClick={() => toggleTabs(1)}></li>
+                        <li class="img02_point" onClick={() => toggleTabs(2)}></li>
+                        <li class="img03_point" onClick={() => toggleTabs(3)}></li>
+                        <li class="img04_point" onClick={() => toggleTabs(4)}></li>
+                        <li class="img05_point" onClick={() => toggleTabs(5)}></li>
+                        <li class="img06_point" onClick={() => toggleTabs(6)}></li>
                     </ul>
 
                     {/* <div class="img_move">
@@ -36,13 +40,23 @@ function Tab() {
                     </ul>
                 </div> */}
 
-                    <img class="back" src="assets/img/tabimg01.jpg" alt="" />
+
                 </div>
 
                 <ul className="tab_card">
-                    <li className="card01">
+                    <li className={toggle === 1 ? "active-content01" : "none"}>
                         <div className="card_left">
                             <img src="assets/img/tab_itm07.jpg" alt="product" />
+                        </div>
+                        <div className="card_right">
+                            <span className="cal">ACCESSORIES</span>
+                            <h4>Bud Vase in Sunflower</h4>
+                            <span className="price">35,000원</span>
+                        </div>
+                    </li>
+                    <li className={toggle === 2 ? "active-content02" : "none"}>
+                        <div className="card_left">
+                            <img src="assets/img/tab_itm08.jpg" alt="product" />
                         </div>
                         <div className="card_right">
                             <span className="cal">ACCESSORIES</span>
@@ -50,7 +64,49 @@ function Tab() {
                             <span>35,000원</span>
                         </div>
                     </li>
+                    <li className={toggle === 3 ? "active-content03" : "none"}>
+                        <div className="card_left">
+                            <img src="assets/img/tab_itm09.jpg" alt="product" />
+                        </div>
+                        <div className="card_right">
+                            <span className="cal">ACCESSORIES</span>
+                            <h4>Bud Vase in Sunflower</h4>
+                            <span>35,000원</span>
+                        </div>
+                    </li>
+                    <li className={toggle === 4 ? "active-content04" : "none"}>
+                        <div className="card_left">
+                            <img src="assets/img/tab_itm10.jpg" alt="product" />
+                        </div>
+                        <div className="card_right">
+                            <span className="cal">ACCESSORIES</span>
+                            <h4>Bud Vase in Sunflower</h4>
+                            <span>35,000원</span>
+                        </div>
+                    </li>
+                    <li className={toggle === 5 ? "active-content05" : "none"}>
+                        <div className="card_left">
+                            <img src="assets/img/tab_itm11.jpg" alt="product" />
+                        </div>
+                        <div className="card_right">
+                            <span className="cal">ACCESSORIES</span>
+                            <h4>Bud Vase in Sunflower</h4>
+                            <span>35,000원</span>
+                        </div>
+                    </li>
+                    <li className={toggle === 6 ? "active-content06" : "none"}>
+                        <div className="card_left">
+                            <img src="assets/img/tab_itm12.jpg" alt="product" />
+                        </div>
+                        <div className="card_right">
+                            <span className="cal">ACCESSORIES</span>
+                            <h4>Bud Vase in Sunflower</h4>
+                            <span>35,000원</span>
+                        </div>
+                    </li>
+
                 </ul>
+                <img class="back" src="assets/img/tabimg01.jpg" alt="" />
 
             </div>
 
