@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/heath/static/css/main.44f799dc.css",
+    "main.js": "/heath/static/js/main.fd24154b.js",
+    "index.html": "/heath/index.html",
+    "main.44f799dc.css.map": "/heath/static/css/main.44f799dc.css.map",
+    "main.fd24154b.js.map": "/heath/static/js/main.fd24154b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44f799dc.css",
+    "static/js/main.fd24154b.js"
+  ]
+}
