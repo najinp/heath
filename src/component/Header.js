@@ -1,14 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import Logo from './svg/Logo';
+import { Link, NavLink } from 'react-router-dom';
+import Nav from './Nav';
 
 
-const NAVLINK = [
-    { id: 1, menu: "식기류", link: '/' },
-    { id: 2, menu: "탁상 및 주방", link: '/' },
-    { id: 3, menu: "장식 및 가구", link: '/' },
-    { id: 4, menu: "타일", link: '/' },
-    { id: 4, menu: "선물", link: '/' },
-]
 
 const Header = () => {
     const [TG, setTG] = useState([false, false]);
@@ -17,22 +12,9 @@ const Header = () => {
         <header className="Header">
             <div className="inner">
                 <h1>
-                    <a href="/">
-                        <Logo /></a>
+                    <Link to='/'><Logo /></Link>
                 </h1>
-                <nav className="Gnb">
-                    <ul>
-                        {
-                            NAVLINK.map((it, idx) => {
-                                return (
-                                    <li key={it.id}>
-                                        <a href={it.link}>{it.menu}</a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </nav>
+               <Nav/>
                 <div className="top_service">
                     <div className={'lang ' + (TG[0] ? 'on' : '')}>
                         <strong onClick={() => setTG([!TG[0], false])}>
@@ -54,8 +36,8 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </div >
+        </header >
 
     )
 }
