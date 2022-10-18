@@ -21,7 +21,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus01.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus01.jpg" />
                             </li>
                             <li>
 
@@ -55,7 +55,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus02.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus02.jpg" alt="product" />
                             </li>
                             <li>
 
@@ -96,7 +96,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus03.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus03.jpg" alt="product" />
                             </li>
                             <li>
 
@@ -138,7 +138,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus04.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus04.jpg" alt="product" />
                             </li>
                             <li>
                                 <h4> 타일 ​​컬렉션</h4>
@@ -162,7 +162,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus05.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus05.jpg" alt="product" />
                             </li>
                             <li>
                                 <h4>카테고리</h4>
@@ -196,7 +196,7 @@ const Nav = () => {
                     <div class="contents__menu">
                         <ul class="container">
                             <li className='img'>
-                                <img src="assets/img/menus06.jpg" alt="product" />
+                                <img src="/heath/assets/img/menus06.jpg" alt="product" />
                             </li>
                             <li>
                                 <h4>히스 발견</h4>

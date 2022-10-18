@@ -47,25 +47,25 @@ function Habs() {
                     >
                         <div className="habs_contents">
                             <figure>
-                                <img src='assets/img/coupe01.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe01.jpg' alt=""></img>
                                 <span>Dinner Plate</span>
                                 <span>Coupe Line</span>
                                 <span>9 Colors / $44.00</span>
                             </figure>
                             <figure>
-                                <img src='assets/img/coupe02.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe02.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/coupe03.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe03.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/coupe04.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe04.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/coupe05.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe05.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/coupe06.jpg' alt=""></img>
+                                <img src='heath/assets/img/coupe06.jpg' alt=""></img>
                             </figure>
 
                         </div>
@@ -77,22 +77,22 @@ function Habs() {
                     >
                         <div className="habs_contents">
                             <figure>
-                                <img src='assets/img/chez01.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez01.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/chez02.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez02.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/chez03.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez03.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/chez04.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez04.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/chez05.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez05.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/chez06.jpg' alt=""></img>
+                                <img src='heath/assets/img/chez06.jpg' alt=""></img>
                             </figure>
                         </div>
 
@@ -103,22 +103,22 @@ function Habs() {
                     >
                         <div className="habs_contents">
                             <figure>
-                                <img src='assets/img/rim01.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim01.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/rim02.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim02.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/rim03.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim03.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/rim04.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim04.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/rim05.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim05.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/rim06.jpg' alt=""></img>
+                                <img src='heath/assets/img/rim06.jpg' alt=""></img>
                             </figure>
                         </div>
 
@@ -128,23 +128,23 @@ function Habs() {
                     >
                         <div className="habs_contents">
                             <figure>
-                                <img src='assets/img/alabama01.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama01.jpg' alt=""></img>
 
                             </figure>
                             <figure>
-                                <img src='assets/img/alabama02.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama02.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/alabama03.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama03.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/alabama04.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama04.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/alabama05.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama05.jpg' alt=""></img>
                             </figure>
                             <figure>
-                                <img src='assets/img/alabama06.jpg' alt=""></img>
+                                <img src='heath/assets/img/alabama06.jpg' alt=""></img>
                             </figure>
                         </div>
 

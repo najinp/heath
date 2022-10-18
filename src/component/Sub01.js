@@ -23,7 +23,7 @@ const Sub01 = ({ content }) => {
                         <p>{content[num].des}</p>
                     </div>
                     <div className="sipic">
-                        <img src='assets/img/subt01.jpg' alt="" />
+                        <img src='heath/assets/img/subt02.jpg' alt="" />
                     </div>
                 </div>
             </div>

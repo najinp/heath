@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom';
+import Habs from './Hab';
 
 const Sub02 = ({ content }) => {
     const num = 1;
@@ -7,25 +9,28 @@ const Sub02 = ({ content }) => {
         <section className='Subpage'>
             <div className="nav__bar">
                 <div className="inner">
-                    홈으로 / {content[num].name}
+                    <Link to='/'>홈으로 </Link> / {content[num].name}
                 </div>
             </div>
+
             <div className="inner">
                 <div className="subintro">
                     <div className="sitxt">
+                        <span>{content[num].name}</span>
                         <h2>{content[num].tit}</h2>
                         <p>{content[num].des}</p>
                     </div>
                     <div className="sipic">
-                        <img src='assets/img/subt02.jpg' alt="" />
+                        <img src='heath/assets/img/subt01.jpg' alt="" />
                     </div>
                 </div>
-
-                <div className="fontb">
-                    <h2>{content[num].tit}</h2>
-                    <p>{content[num].des}</p>
+            </div>
+            <div className="subtab">
+                <div className="subtab__inner">
+                    <Habs />
                 </div>
             </div>
+
         </section>
     )
 }
