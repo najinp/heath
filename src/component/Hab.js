@@ -120,7 +120,7 @@ function Habs() {
               {COUPE.map((it) => {
                 return (
                   <figure>
-                    <img src={'heath/assets/img/coupe0' + it.id + '.jpg'}></img>
+                    <img src={process.env.PUBLIC_URL + '/assets/img/coupe0' + it.id + '.jpg'}></img>
                     <span className="tit">{it.tit}</span>
                     <span className="sort">{it.sort}</span>
                     <span className="col">{it.color}</span>
@@ -139,7 +139,7 @@ function Habs() {
               {SHED.map((it) => {
                 return (
                   <figure>
-                    <img src={'heath/assets/img/chez0' + it.id + '.jpg'}></img>
+                    <img src={process.env.PUBLIC_URL + '/assets/img/chez0' + it.id + '.jpg'}></img>
                     <span className="tit">{it.tit}</span>
                     <span className="sort">Chez Line</span>
                     <span className="col">{it.color}</span>
@@ -158,7 +158,7 @@ function Habs() {
               {SHED.map((it) => {
                 return (
                   <figure>
-                    <img src={'heath/assets/img/rim0' + it.id + '.jpg'}></img>
+                    <img src={process.env.PUBLIC_URL + '/assets/img/rim0' + it.id + '.jpg'}></img>
                     <span className="tit">{it.tit}</span>
                     <span className="sort">Rim Line</span>
                     <span className="col">{it.color}</span>
@@ -177,7 +177,7 @@ function Habs() {
                 return (
                   <figure>
                     <img
-                      src={'heath/assets/img/alabama0' + it.id + '.jpg'}
+                      src={process.env.PUBLIC_URL + '/assets/img/alabama0' + it.id + '.jpg'}
                     ></img>
                     <span className="tit">{it.tit}</span>
                     <span className="sort">Alabama Line</span>

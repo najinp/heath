@@ -5,7 +5,7 @@ const Subscribe = () => {
     return (
         <section className='Subscribe'>
             <div className="inner">
-                <img className='sub_back' src="heath/assets/img/subscribe.jpg" alt="" />
+                <img className='sub_back' src={process.env.PUBLIC_URL + "/assets/img/subscribe.jpg"} alt="" />
                 <div className="ipb">
                     <span className='cali'> IN CALIFORNIA SINCE 1948</span>
                     <input placeholder='성함을 입력하세요'></input>

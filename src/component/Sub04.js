@@ -64,7 +64,7 @@ const Sub04 = ({ content }) => {
               <p>{content[num].des}</p>
             </div>
             <div className="sipic">
-              <img src="heath/assets/img/subt04.jpg" alt="" />
+              <img src={process.env.PUBLIC_URL + "/assets/img/subt04.jpg"} alt="" />
             </div>
           </div>
           <div className="tilesz">
@@ -82,13 +82,13 @@ const Sub04 = ({ content }) => {
                 return (
                   <figure>
                     <img
-                      src={'heath/assets/img/tilec0' + ta.id + '.jpg'}
+                      src={process.env.PUBLIC_URL + '/assets/img/tilec0' + ta.id + '.jpg'}
                       alt=""
                     />
 
                     <div className="tiletxt">
                       <span className="tileicon">
-                        <img src={'heath/assets/img/' + ta.icon}></img>
+                        <img src={process.env.PUBLIC_URL + '/assets/img/' + ta.icon}></img>
                       </span>
                       <h3>{ta.tit}</h3>
                       <p>{ta.des}</p>
