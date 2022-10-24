@@ -1,5 +1,15 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import IconA from './svg/IconA'
+
+const NAVLINK = [
+    { id: 1, menu: "식기류", link: '/sub01' },
+    { id: 2, menu: "탁상 및 주방", link: '/sub02' },
+    { id: 3, menu: "장식 및 가구", link: '/sub03' },
+    { id: 4, menu: "타일", link: '/sub04' },
+    { id: 5, menu: "선물", link: '/sub05' },
+    { id: 6, menu: "우리", link: '/sub06' },
+]
 
 const TopFooter = () => {
     return (
@@ -9,17 +19,15 @@ const TopFooter = () => {
                     <h5>뉴스레터 구독하기</h5>
                     <input placeholder='이메일 주소를 입력하세요'></input>
                     <IconA />
-
-
                 </div>
                 <div className="tfright">
                     <ul>
                         <h5>가게</h5>
-                        <li>식기류</li>
-                        <li>탁상 및 주방</li>
-                        <li>가구 및 장식</li>
-                        <li>타일</li>
-                        <li>선물</li>
+                        {NAVLINK.map((it, idx) => {
+                            return (
+                                <li key={it.id}><Link to={it.link}>{it.menu}</Link></li>
+                            )
+                        })}
                     </ul>
                     <ul>
                         <h5>고객 서비스</h5>
