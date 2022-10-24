@@ -21,7 +21,7 @@ const Sub02 = ({ content }) => {
               <p>{content[num].des}</p>
             </div>
             <div className="sipic">
-              <img src="heath/assets/img/subt02.jpg" alt="" />
+              <img src={process.env.PUBLIC_URL + "/assets/img/subt02.jpg"} alt="" />
             </div>
           </div>
 
